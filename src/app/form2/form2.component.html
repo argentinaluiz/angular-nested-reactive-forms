@@ -1,0 +1,7 @@
+<h1>Formulário 2</h1>
+<form (submit)="submit()">
+  <label>Cidade:</label><input type="text" name="city" [(ngModel)]="clientData.city">
+  <label>Bairro</label><input type="text" name="neighborhood" [(ngModel)]="clientData.neighborhood">
+  <button type="button" [routerLink]="['/form-1']">Voltar</button>
+  <button type="submit">Próximo</button>
+</form>

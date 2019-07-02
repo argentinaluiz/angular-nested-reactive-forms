@@ -1,0 +1,6 @@
+<h1>Formulário 1</h1>
+<form [formGroup]="clientData.rootForm.get('childForm1')" (submit)="submit()">
+  <label>Name:</label><input type="text" name="name" formControlName="name">
+  <label>E-mail</label><input type="text" name="email" formControlName="email">
+  <button type="submit" [disabled]="clientData.rootForm.get('childForm1').invalid">Próximo</button>
+</form>
